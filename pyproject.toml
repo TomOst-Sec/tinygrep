@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tinygrep"
+version = "0.1.0"
+description = "Small grep-like CLI with a tiny regex engine"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Tom" }]
+keywords = ["regex","grep","cli"]
+classifiers = ["Programming Language :: Python :: 3"]
+
+[project.scripts]
+tinygrep = "tinygrep.cli:main"
+
+[tool.hatch.build]
+packages = ["src/tinygrep"]
