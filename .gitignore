@@ -1,6 +1,15 @@
+# Python
 __pycache__/
-*.pyc
-dist/
-build/
+*.py[cod]
 *.egg-info/
+.build/
+dist/
+.build/
+.pytest_cache/
+.coverage
+*.log
+
+# Envs and OS
+.venv/
+.env
 .DS_Store
